@@ -1,54 +1,62 @@
 # Retail Sales Analytics (Python)
 
 ## Overview
-This project analyses a global retail sales dataset to understand sales performance, customer behaviour, and financial trends. It also includes a data audit to assess data quality and reliability before analysis.
+This project explores a global retail sales dataset to understand how the business is performing across sales, customers, and financial metrics. The goal is to turn raw data into clear insights that can support better decision-making.
+
+The analysis covers the full workflow — from data cleaning and auditing to exploration, forecasting, and customer segmentation.
 
 ---
 
-## Tools Used
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-- Jupyter Notebook
+## Key Features
+- Data cleaning and validation using Python (Pandas)  
+- Exploratory data analysis (EDA) to uncover trends and patterns  
+- Financial performance analysis (revenue, discounts, growth)  
+- Time series analysis and sales forecasting  
+- Customer segmentation using RFM (Recency, Frequency, Monetary)  
+- Data quality audit to identify inconsistencies and improve reliability  
 
 ---
 
 ## Dataset
-Global Retail Sales Analytics Dataset (Kaggle)  
-https://www.kaggle.com/datasets/faheem113141/global-retail-sales-analytics-dataset
+Global Retail Sales Analytics Dataset (Kaggle):  
+https://www.kaggle.com/datasets/faheem113141/global-retail-sales-analytics-dataset  
 
 ---
 
 ## Project Structure
-- Data cleaning and validation  
-- Exploratory data analysis (EDA)  
-- Financial performance analysis  
-- Time series forecasting  
-- Customer segmentation (RFM)  
-- Data quality audit  
+retail-sales-analysis-python/
+│
+├── notebook/
+│ └── retail_sales_analysis.ipynb
+├── data/
+│ ├── retail_sales_processed.csv
+│ └── customer_segments.csv
+├── images/
+│ └── (charts and visual outputs)
+├── README.md
+└── requirements.txt
 
 ---
 
 ## Data Audit
-A structured audit was performed to evaluate data quality and consistency.
+Before analysis, a structured data audit was performed to check data quality and reliability.
 
 Checks included:
 - Missing values and completeness  
 - Duplicate transactions  
-- Invalid values (negative quantities, incorrect pricing)  
+- Invalid values (e.g. negative quantities or prices)  
 - Price validation (Unit Price × Quantity vs Total Price)  
 
-Key findings:
-- Identified inconsistencies in pricing and transaction records  
-- Detected duplicate and missing data affecting analysis  
-- Highlighted data quality issues impacting reporting accuracy  
+This step helped identify inconsistencies that could affect reporting and ensured the dataset was suitable for analysis.
 
 ---
 
 ## Key Insights
-- Revenue is concentrated in a few key product categories (Pareto principle observed)  
-- Sales show clear seasonal patterns and weekend performance differences  
-- Customer spending is uneven, with a small group contributing most revenue  
-- Discounts impact revenue but require balance to maintain profitability  
-- Delivery and operational timing influence overall performance  
+- Revenue is concentrated in a small number of product categories (Pareto effect)  
+- Sales show clear seasonal patterns and differences across days of the week  
+- A small group of customers contributes a large share of total revenue  
+- Discounts influence sales but need to be managed to protect profitability  
+- Sales trends can be used to forecast future performance and support planning  
 
 ---
 
@@ -65,18 +73,37 @@ Key findings:
 
 ---
 
-## Outputs
-- Cleaned dataset: `retail_sales_processed.csv`  
-- Customer segments: `customer_segments.csv`  
+## Installation
+
+1. Clone the repository: git clone https://github.com/kingTX95/retail_sale_analytics_python_project.git
+2. Install dependencies: pip install -r requirements.txt
+3. Open the notebook: Jupyter Notebook
 
 ---
 
-## How to Run
-1. Clone the repository  
-2. Install dependencies  
-3. Open the notebook in Jupyter  
+## Usage
+Open the notebook and run the cells step by step.  
+The analysis follows a clear flow:
+- Load data  
+- Clean and validate  
+- Explore and visualise  
+- Generate insights and forecasts  
+
+---
+
+## Outputs
+- Cleaned dataset: `retail_sales_processed.csv`  
+- Customer segmentation: `customer_segments.csv`  
+- Visualisations saved in the `images/` folder  
+
+---
+
+## Notes
+- This project is designed for learning and portfolio purposes  
+- The dataset comes from Kaggle and may contain real-world inconsistencies  
+- Data cleaning and validation are key parts of the analysis  
 
 ---
 
 ## Conclusion
-This project demonstrates end-to-end data analysis, from data cleaning and auditing to insight generation and forecasting, with a focus on real business application.
+This project demonstrates an end-to-end data analysis workflow using Python, with a focus on real business questions. It shows how data can be cleaned, analysed, and turned into insights that support better decisions in a retail environment.
